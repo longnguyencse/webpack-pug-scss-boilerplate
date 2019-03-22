@@ -50,7 +50,10 @@ exports.loadPug = (options) => ({
           },
           {
             loader: 'pug-html-loader',
-            options
+            options,
+            query: {
+              pretty: true
+            }
           }
         ]
       }
